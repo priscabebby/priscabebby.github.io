@@ -27,9 +27,9 @@ header .headerkanan nav ul li:hover > ul{ display:block;}
 
 header .headerkanan nav ul li a.active {background: #DCC6E0;  color :white;}
 
-.gambar1 { color: grey;  }
-.gambar1 img{width: 1100px; height:480px; position:absolute; z-index:-1;top:120px; left:15px; right: 5px;}
-.gambar1 h1{position: relative;text-align:center; margin-top:30px; font-size:30px; z-index:-1; }
+.gambar1 { color: grey; position:relative; }
+.gambar1 img{width: 1100px; height:480px;  z-index:-1;top:120px; left:15px; right: 5px;}
+.gambar1 h1{position: absolute;text-align:center; margin-top:30px; font-size:30px; z-index:-1; }
 .gambar1 h2{color: #FCFEFF; text-align:center; margin-top:100px; font-size:50px;font-family: trebuchet Ms;  }
 .gambar1 h3{color: maroon; text-align:center;margin-top:30px; font-size:35px;font-family: comic sans;}
 .gambar1 hr{background: grey; height: 3px; width: 200px; margin-left:450px; }
