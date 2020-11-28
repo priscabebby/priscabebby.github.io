@@ -1,0 +1,160 @@
+*{padding:0;margin:0}
+
+.container {width: 1100px; margin: auto;}
+
+header{ margin-bottom: 25px;}
+header .headerkiri {float:left; width: 250px; border-bottom:1px solid black;margin-bottom: 5px; }
+header .headerkiri img{margin-bottom:0px; width:37px;}
+header .headerkiri  h1 {color: #8BA9B2; font-size:16px; margin-left: 5px; text-align: left; }	
+
+header .headerkanan {float:right; width: 850px;border-bottom:1px solid black;margin-top:23px; margin-bottom: 10px;  background: #F4F4E6}	
+header .headerkanan nav  {height: 40px; line-height: 40px; margin-left:140px; border-radius: 5%;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2f6f8+0,d8e1e7+50,b5c6d0+51,e0eff9+100;Grey+Gloss+%232 */
+background: #F4F4E6; /* Old browsers */}
+header .headerkanan nav ul li {float: left; list-style: none; border-right:1px solid white; 
+	background: #F4F4E6;}
+header .headerkanan nav ul li a { text-decoration:none; padding: 12px 60px;}
+header .headerkanan nav ul li ul {display:none; position:absolute; width:167px;}
+header .headerkanan nav ul li ul li a{border-right:none;border-bottom:1px solid grey; border-left:1px solid white;}
+header .headerkanan nav ul li ul li{ float: none; position : relative;}
+header .headerkanan nav ul ul ul { width: 60px;left:100%; top:0;}
+header .headerkanan nav ul li ul li ul{width:167px;}
+header .headerkanan nav ul li :hover{ background: #DCC6E0; }
+header .headerkanan nav ul li a:hover{color: white;}
+header .headerkanan nav ul li:hover > ul{ display:block;}
+
+header .headerkanan nav ul li a.active {background: #DCC6E0;  color :white;}
+
+
+article .kiri{float: left; width:300px}
+article .kanan{ margin-bottom: 20px;float: right; width: 750px;}
+article .kanan h2{color : grey; font-size: 12px;text-align: right; margin-bottom: 15px;}
+article h1 {color: grey; margin-bottom: 15px; font-size:30px; margin-top: 15px; font-family: trebuchet Ms;}	
+article hr { background: lime; height: 3px; width: 150px; margin-bottom: 10px; } 
+
+/*table*/
+table{margin-top: 50px;margin-left:25px; width: 700px;height:80px;}
+caption {
+	background-color:#3f4c6b; ;
+	color:white; font-size:30px;
+	padding:15px;
+	text-transform: uppercase;
+}
+table thead{
+	background-color: #FCF9DB;
+	color:darkred;
+}
+
+tbody{
+	background-color: #F2E6C9;
+}
+
+th,td{
+	padding :4px 25px;
+}
+
+tbody tr td:nth-child(2){
+	text-align:center;
+}
+
+tbody tr td:nth-child(3),
+tbody tr td:nth-child(4){
+	text-align:right;
+}
+
+td{color: grey;}
+tfoot{
+	background-color: #c9AC;
+	color: white;
+	text-align: right;
+}
+
+article tr:nth-child(even){
+	background-color :white;
+}
+
+
+/* css untuk form */
+article .kiri .inputform {
+	overflow: hidden; background:#1abc9c; padding: 30px; width: 245px; margin-right:800px;
+	border:1px solid blue; border-radius: 15px;
+}
+article.kiri .inputform label {
+	font-size: 18px; float: left; margin: 5px 0; padding: 5px 0 0 0;
+}
+article.kiri .inputform  input.inputText {
+	float: right; box_shadow: none; font-size:15px;
+	width: 200px; margin-right: 5px;
+	padding: 5px; border: 1px solid blue;
+	border-radius: 5px; margin: 5px 0;
+}
+article .kiri .inputform input.inputText:hover {
+	background-color: #ffcdd2;
+}
+article .kiri input[type=submit]{
+	padding: 15px; margin-left: 1px; background-color: blue; color: white;
+}
+article .kiri button[type=button]{
+padding: 15px; margin-right: 10px;
+background-color: lightblue; color: white;
+}
+article .kiri input[type=submit]:hover, button[type=button]:hover{
+background-color: darkblue;}
+	
+
+
+/* css pagination */
+.pagination { background-color: white; padding: 5px 10px; margin-top: 5px;}
+.pagination .page{margin-left: 500px;}
+.pagination .page a{
+	padding :5px 10px; text-decoration:none; color :blue;
+	transition : background-color .5s; border : 1px solid #ddd; margin : 0 1 px;}
+.pagination .page a:hover:not(.active) {
+	background-color:silver;
+	border-radius :7px;
+color: white;}
+.pagination .page a.active {
+	background-color:lightblue;
+	color :grey;
+border-radius :7px;}
+
+
+
+footer {
+position: relative; display: inline-block; border-bottom: 1px dotted black;
+text-align:right; width: 1100px;display: block; color: grey ;line-height: 35px;
+ margin-top:10px ; background:#EDE8C2 ;text-align:left}
+footer img{width:50px; position: fixed; bottom: 0; margin-left: 500px;
+  right: 0;
+  border :2px solid #c9AC;} 
+  
+footer img:hover { background: lime;} 
+  
+footer .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background: grey;
+  color: #EDE8C2;
+  text-align: center;
+  border-radius: 30px;
+  line-height: 50px;
+  position: fixed;
+  z-index: 1;
+  top: 590px;
+  right: 70px;
+  border :1px solid #c9AC;
+}
+
+footer .tooltiptext::after {
+  content: "";
+  position: fixed;
+  top: 590px;
+  left: 1280px;
+  margin-top: 25px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent brown;
+}
+footer:hover .tooltiptext {
+  visibility: visible;
+}

@@ -1,0 +1,76 @@
+*{padding:0;margin:0}
+
+.container {width: 1200px; margin: auto;}
+
+header{ margin-bottom: 25px;}
+header .headerkiri {float:left; width: 350px; border-bottom:1px solid black;margin-bottom: 5px; }
+header .headerkiri img{margin-bottom:0px; width:37px;}
+header .headerkiri  h1 {color: #8BA9B2; font-size:16px; margin-left: 5px; text-align: left; }	
+
+header .headerkanan {float:right; width: 850px;border-bottom:1px solid black;margin-top:23px; margin-bottom: 10px;  background: #F4F4E6}	
+header .headerkanan nav  {height: 40px; line-height: 40px; margin-left:140px; border-radius: 5%;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2f6f8+0,d8e1e7+50,b5c6d0+51,e0eff9+100;Grey+Gloss+%232 */
+background: #F4F4E6; /* Old browsers */
+}
+header .headerkanan nav ul li {float: left; list-style: none; border-right:1px solid white; 
+	background: #F4F4E6;}
+header .headerkanan nav ul li a { text-decoration:none; padding: 12px 60px;}
+header .headerkanan nav ul li ul {display:none; position:absolute; width:172px;}
+header .headerkanan nav ul li ul li a{border-right:none;border-bottom:1px solid grey; border-left:1px solid white;}
+header .headerkanan nav ul li ul li{ float: none; position : relative;}
+header .headerkanan nav ul ul ul { width: 60px;left:100%; top:0;}
+header .headerkanan nav ul li ul li ul{width:100%;}
+header .headerkanan nav ul li :hover{ background: #DCC6E0;}
+header .headerkanan nav ul li a:hover{color: white;}
+header .headerkanan nav ul li:hover > ul{ display:block;}
+header .headerkanan nav ul li a.active {background: #DCC6E0;  color :white;}
+
+
+article{ text-align: center; margin-bottom: 30px;}
+article .atas {  width: 1100px;} 
+article .atas img { width: 350px; margin-right: 600px; height: 350px;}
+
+article .bawah {width: 1200px;  margin-top : 15px; margin-right: 300px;background:grey;margin-bottom:20px;}
+article .bawah  h2{color: #6FBCAE; width: 520px; float: right; font-size: 40px; background-color: #3f4c6b; margin-bottom: 15px;}
+article .bawah  p{color : black; text-align: justify; margin-left: 50px; width: 500px; font-size:17px; color:silver;  }
+article hr { background:lime ; height: 2px; width: 1000px; margin-bottom:20px;}
+
+
+
+
+footer {
+position: relative; display: inline-block; border-bottom: 1px dotted black;
+text-align:right; width: 1200px;display: block; color: grey ;line-height: 35px;
+ margin-top:30px ; background:#EDE8C2 ;text-align:left}
+footer img{width:50px; position: fixed; bottom: 0; margin-left: 500px; right: 0; border :2px solid #c9AC;}  
+  
+footer img:hover { background: lime;} 
+  
+footer .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background: grey;
+  color: #EDE8C2;
+  text-align: center;
+  border-radius: 30px;
+  line-height: 50px;
+  position: fixed;
+  z-index: 1;
+  top: 590px;
+  right: 70px;
+  border :1px solid #c9AC;
+}
+
+footer .tooltiptext::after {
+  content: "";
+  position: fixed;
+  top: 590px;
+  left: 1280px;
+  margin-top: 25px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent brown;
+}
+footer:hover .tooltiptext {
+  visibility: visible;
+}
